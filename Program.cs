@@ -1,6 +1,6 @@
 using System.Windows.Forms;
 
-namespace RefactorMe
+namespace DrawingProgram
 {
     public class Program
     {

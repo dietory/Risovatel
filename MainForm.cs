@@ -2,7 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace RefactorMe
+namespace DrawingProgram
 {
     public class MainForm : Form
     {
@@ -33,7 +33,7 @@ namespace RefactorMe
         {
             var angularVelocity = Math.PI / 4;
             var angle = angularVelocity * (time * timer.Interval / 1000d);
-            ImpossibleSquare.Draw(ClientSize.Width, ClientSize.Height, angle, e.Graphics);
+            ImpossibleSquare.Draw(ClientSize.Width, ClientSize.Height, e.Graphics);
         }
 
         private void TimerTick()

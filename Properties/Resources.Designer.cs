@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RefactorMe.Properties {
+namespace DrawingProgram.Properties {
     using System;
     
     

@@ -1,9 +1,9 @@
 using System;
 using System.Drawing;
 using NUnit.Framework;
-using RefactorMe.Properties;
+using DrawingProgram.Properties;
 
-namespace RefactorMe
+namespace DrawingProgram
 {
     [TestFixture]
     public class DrawingProgram_Tests
@@ -14,7 +14,7 @@ namespace RefactorMe
             const int width = 800;
             const int height = 600;
             var actual = new Bitmap(width, height);
-            ImpossibleSquare.Draw(width, height, 0, Graphics.FromImage(actual));
+            ImpossibleSquare.Draw(width, height, Graphics.FromImage(actual));
             //actual.Save(TestContext.CurrentContext.TestDirectory + "/expected-image.bmp");
             AssertImageEquals(Resources.expected_image, actual);
         }
